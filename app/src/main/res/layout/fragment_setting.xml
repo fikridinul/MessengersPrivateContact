@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.thesisproject.fikri.messengers.mainfragments.SettingFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Password"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="*Make sure to add ## before entering four numbers"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="5dp"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="25dp"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change"
+        android:id="@+id/settingButton1"
+        android:layout_below="@+id/settingEditText1"
+        android:layout_alignEnd="@+id/settingEditText1"
+        android:layout_marginBottom="15dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/settingEditText1"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:hint="Enter Here"
+        android:maxLength="6"
+        android:layout_marginRight="25dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/settingButton1"
+        android:layout_alignParentStart="true"
+        android:id="@+id/view"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/view"
+        android:id="@+id/relativeLayout"
+        android:clickable="true"
+        android:contextClickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Default SMS Application"
+            android:id="@+id/textView5"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"/>
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Give an authority to this application to take an action for message"
+            android:id="@+id/textView6"
+            android:layout_below="@+id/textView5"
+            android:layout_alignStart="@+id/textView5"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:clickable="false"/>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/switchDef"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentStart="true"
+        android:id="@+id/view1"/>
+
+</RelativeLayout>
